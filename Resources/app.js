@@ -34,4 +34,8 @@ tableView.addEventListener('touchend', function ( row ) {
 	newWindow.open();
 });
 
+if ( Ti.UI.currentWindow !== undefined ) {
+	Ti.UI.currentWindow.hide();
+}
+
 win.open();
